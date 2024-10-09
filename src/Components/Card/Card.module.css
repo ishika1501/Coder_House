@@ -1,0 +1,106 @@
+/* Main content styling */
+.mainContent {
+  margin-top: 40px;
+  text-align: center; /* Center all text in the main content */
+  margin: 20px; /* Margin for the main content */
+  font-family: 'poppins';
+  
+}
+
+/* Container for the titles */
+.titleContainer {
+  margin-bottom: 0px; /* Space below the title container */
+}
+
+/* Subtitle styling */
+.subtitle {
+  color: #555555; /* Grey color for the subtitle */
+  font-size: 1.8rem; /* Adjust size as needed */
+}
+
+/* Main title styling */
+.mainTitle {
+  color: #555555; /* Grey color for general title */
+  font-size: 2rem; /* Adjust size as needed */
+  margin-bottom: 60px; /* Remove default margin */
+  font-weight: 500;
+}
+
+/* Specific styling for 'CODER HOUSE' */
+.mainTitle p1 {
+  color: #A8D85D; /* Green color */
+  font-weight: bold; /* Bold font */
+  text-transform: uppercase; /* Capitalize the text */
+  margin-left: 5px; /* Space between 'Of' and 'CODER HOUSE' */
+  margin-bottom: 400px;
+}
+
+/* Container for the cards */
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Keep cards in a wrap format */
+  padding: 0px; /* No padding */
+  justify-content: center; /* Center the cards */
+}
+
+/* Default card styling */
+.card {
+  background: url('./public/images/Card1.png') no-repeat center center; /* Default background image */
+  background-size: cover; /* Ensure the image covers the entire card */
+  padding: 50px; /* Keep padding to fit the image perfectly */
+  border-radius: 12px;
+  box-shadow: none; /* Remove drop shadow */
+  width: 300px; /* Adjust width as needed */
+  height: 390px; /* Adjust height as needed */
+  margin: 0; /* Remove margin to keep them close together */
+  text-align: left; /* Align text to the left */
+  transition: all 0.3s ease; /* Transition for all properties */
+  position: relative; /* Maintain positioning context */
+  cursor: pointer; /* Change cursor on hover */
+  z-index: 1; /* Ensure it is above other elements */
+  transform: translateY(0) scale(1); /* Initial transform */
+  color: #555555; /* Default text color */
+  margin-bottom: 10px;
+}
+
+/* Hover effect for card background */
+.card:hover {
+  transform: translateY(-10px) scale(1.1); /* Scale up on hover */
+  z-index: 10; /* Bring hovered card to the front */
+  color: white; /* Change text color to white on hover */
+}
+
+/* Title styling for cards */
+.title {
+  margin-top: 120px; /* Space above the title */
+  font-size: 1.5rem; /* Title font size */
+  margin-bottom: 40px; /* Space below the title */
+}
+
+/* Description styling */
+.description {
+  font-size: 1.1rem; /* Description font size */
+  margin-bottom: 0; /* No margin below the description */
+}
+
+/* Feature list styling */
+.features {
+  list-style-type: none; /* Remove default list style */
+  padding: 0px; /* Padding around the list */
+}
+
+.featureItem {
+  margin-bottom: 10px; /* Space below each feature */
+  font-size: 1rem; /* Font size for features */
+  position: relative; /* Position relative for the before pseudo-element */
+  padding-left: 25px; /* Padding left for features */
+}
+
+.featureItem::before {
+  content: '✔'; /* Check mark before each feature */
+  color: #A8D85D; /* Green color for check mark */
+  position: absolute; /* Position absolutely */
+  left: 0; /* Align left */
+  top: 0; /* Align top */
+  font-size: 1.1rem; /* Size of the check mark */
+}

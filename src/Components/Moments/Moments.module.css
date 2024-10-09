@@ -1,0 +1,66 @@
+.momentsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    background-color: #f0f0f0; /* fallback color */
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Background covers 50% of the screen */
+    height: 100%;
+    background-image: url('./public/images/Moments.png'); /* Adjust the path to your image */
+    background-size: cover;
+    background-position: left center; /* Align background to the left */
+    z-index: 1; /* Keep it behind the content */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns the frames to the right */
+    z-index: 2; /* Make sure it's above the background */
+    width: 50%; /* Ensure it takes the other 50% of the screen */
+    padding-right: 20px;
+  }
+  
+  .arrowContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 10px; /* Position arrows on the left side */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3; /* Make sure arrows are clickable */
+  }
+  
+  .arrowBtn {
+    background-color: #3f4e65;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px 0; /* Add some spacing between arrows */
+  }
+  
+  .frames {
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+  }
+  
+  .frame {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  

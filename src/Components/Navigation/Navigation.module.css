@@ -1,0 +1,22 @@
+.navigation {
+    padding: 0 80px;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E2031; 
+    color: #fff;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+
+.logo img {
+    width: 72px;  
+    height: auto;
+}

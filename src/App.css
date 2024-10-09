@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* :root {
+} */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+/* Add this to your App.css or any global CSS file */
+body {
+  background-image: url('/Coder_House/public/images/form\ bg\ home.png');  /* Change this to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index: 6;
+}
+
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.main_container {
+  display: flex;
+  height: calc(100vh - 72px);
+  flex-direction: column;
+  justify-content: end;
+}
+
+
+/* CSS FOR FORM  */
+
+.text-container {
+  text-align: center; /* Centers text */
+  margin-bottom: 60px; /* Space below the title */
+}
+
+.subheading {
+  font-size: 1.2rem; /* Subheading size */
+  color: #ffffff; /* Darker text for subheading */
+}
+
+
+.main-title {
+  font-size: 2rem; /* Main title size */
+  color: #ffffff; /* Dark text for main title */
+}
+
+.family {
+  color: #93d627; /* Different color for "Family" */
+}
+
+
+
+.form_control input::placeholder,
+.form_control select::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form_control select {
+  cursor: pointer; /* Pointer cursor for select element */
+}
+
+/* BODY OF THE FORM  */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url('/images/HomeBackground.png'); /* Correct file path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index: 6;
+}
+
+.yellow-rectangle {
+  background-color: rgb(255, 255, 255);  /* Set background color to yellow */
+  height: 150px;             /* Set a fixed height */
+  width: 76%;                /* Set width to 76% */
+  margin: 70px auto;        /* Center the rectangle horizontally with auto margins */
+  display: flex;             /* Optional: allows you to use flexbox properties */
+  align-items: center;       /* Optional: centers content vertically if needed */
+  justify-content: center;   /* Optional: centers content horizontally if needed */
+  border-radius: 15px;      /* Round the edges */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Add a shadow effect */
+}
+
+
+
+/* COURCES MODULE */
+
+.introText {
+  text-align: center;
+  margin: 10px 0 70px; /* Increased top margin for more space */
+  z-index: 3; /* Bring the intro text above the background */
+  position: relative; /* Position context for z-index */
+  color: #444;
+}
+
+.planCard.active {
+  transform: translateY(-40px);
+}
+
+.planName {
+  margin-top: 60px;
+  font-size: 24px;
+  font-weight: 300px;
+  margin-bottom: 10px;
+}
+
+.arrowButton {
+  position: absolute;
+  bottom: -0px;
+  left: 49%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #5a8ebf;
+  transition: transform 0.3s ease;
+}
+
+.rotate .triangle {
+  transform: rotate(180deg);
+}
+
+.planDetails {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 290px;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.planDetails.visibleDetails {
+  opacity: 10;
+  visibility: visible;
+  color: #444;
+}
+
+.whiteSheet {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.whiteSheet .closeButton {
+  position: absolute;
+  top: -25px; /* Adjust position above the white sheet */
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.planDetails p {
+  margin: 50px 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.brochureButton,
+.viewButton {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.brochureButton {
+  background-color: #8bc34a;
+  color: white;
+}
+
+.viewButton {
+  background-color: #444;
+  color: white;
+}
+
+
+
+
+
+

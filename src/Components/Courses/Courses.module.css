@@ -1,0 +1,148 @@
+.coursesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./public/images/CoursesBg.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative; /* Ensure positioning context for child elements */
+    height: 600px;
+}
+
+.introText {
+    text-align: center;
+    margin: 10px 0 70px; /* Increased top margin for more space */
+    z-index: 3; /* Bring the intro text above the background */
+    position: relative; /* Position context for z-index */
+    color: #444;
+}
+
+.coursesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    position: relative;
+    z-index: 300; /* Ensure the cards are above the background */
+}
+
+/* Plan Card Styles */
+.planCard {
+    background: url('/images/planCard.png') no-repeat center center; /* Ensure the URL is correct */
+    background-size: cover; /* Ensure it covers the entire card */
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px; /* Set width */
+    height: 200px; /* Set height */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    position: relative; /* Allow z-index to take effect */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    z-index: 200; /* Ensure this card is above other elements */
+    opacity: 1; /* Ensure full opacity */
+}
+
+.planCard.active {
+    transform: translateY(-40px);
+}
+
+.planName {
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+}
+
+.arrowButton {
+    position: absolute;
+    bottom: -0px;
+    left: 49%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #5a8ebf;
+    transition: transform 0.3s ease;
+}
+
+.rotate .triangle {
+    transform: rotate(180deg);
+}
+
+.planDetails {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 290px;
+    height: 9000px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
+}
+
+.planDetails.visibleDetails {
+    opacity: 10;
+    visibility: visible;
+    color: #444;
+}
+
+.whiteSheet {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.whiteSheet .closeButton {
+    position: absolute;
+    top: -25px; /* Adjust position above the white sheet */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.planDetails p {
+    margin: 50px 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brochureButton,
+.viewButton {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.brochureButton {
+    background-color: #8bc34a;
+    color: white;
+}
+
+.viewButton {
+    background-color: #444;
+    color: white;
+}
