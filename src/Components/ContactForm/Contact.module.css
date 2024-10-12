@@ -5,6 +5,10 @@
   padding: 20px; /* Adds some padding around the container */
   height: auto; /* Set height to auto */
   overflow: hidden; /* Prevent scrollbars from appearing */
+  background-image: url('/images/HomeBackground.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact_image {

@@ -6,6 +6,7 @@
     justify-content: space-between;
     background-color: #0E2031; 
     color: #fff;
+    z-index: 400;
 }
 
 .navigation ul {
@@ -15,6 +16,19 @@
     font-weight: 500;
 }
 
+.navigation ul li {
+    font-family: 'Poppins', sans-serif;  /* Set Poppins font */
+    color: white;  /* Ensure links are white */
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;  /* Remove underline from links */
+}
+
+.navigation ul li a:hover {
+    color: #ccc;  /* Optional: change color on hover for better UX */
+}
 
 .logo img {
     width: 72px;  

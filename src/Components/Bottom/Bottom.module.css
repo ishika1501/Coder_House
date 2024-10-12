@@ -1,0 +1,137 @@
+.footerContainer {
+
+    margin-top:1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/images/footerbg.png') no-repeat center center;
+    background-size: cover; /* Make sure the image covers the entire area */
+    padding: 0px;
+    width: 100%;
+    height: 500px; /* Adjust height based on your image */
+    position: relative;
+   
+}
+
+/* Location Container Styles */
+.locationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E1FCA8;
+    padding: 20px;
+    width: 50%; /* Adjust width */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -140px; /* Move it upwards to overlap */
+    z-index: 10;
+    height: 200px;
+    margin-bottom: -100px; /* Reduce margin to avoid unnecessary space below */
+    z-index: 300;
+}
+
+.locationText {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    flex-grow: 2; /* Make sure the text takes more space */
+}
+
+.locationIcon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.address h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.address p {
+    margin: 2px 0;
+}
+
+.mapPlaceholder {
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Add some space between text and map */
+}
+
+/* Footer Links Styles */
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 10px 0; /* Adjust spacing around the links */
+    color: #fff;
+}
+
+.footerLinks a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.footerLinks a:hover {
+    color: #6fcf97; /* Hover effect */
+}
+
+/* Social Media Section */
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add space between social media and links */
+}
+
+.socialMedia h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #A8D85D;
+    font-weight: 400;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.4); /* Hover effect */
+}
+
+/* Ensure that the page ends without extra scroll */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footerContainer {
+    margin-top: auto; /* Push the footer to the bottom */
+    bottom: 0;
+}
